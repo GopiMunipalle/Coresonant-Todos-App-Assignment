@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Todo Application with API Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Todo application built using React.js that allows users to manage tasks. The application integrates with an API to fetch and display a list of tasks. Users can add, edit, and delete tasks, as well as mark them as completed. Additionally, the application provides a filter functionality to toggle between displaying all tasks and completed tasks.
 
-## Available Scripts
+## Functionality
 
-In the project directory, you can run:
+The Todo application includes the following features:
 
-### `npm start`
+1. **Display Existing Tasks**: The application displays a list of existing tasks, showing the task name and its status (completed or not). This list is initialized with todos fetched from the following API endpoint: [https://jsonplaceholder.typicode.com/users/1/todos](https://jsonplaceholder.typicode.com/users/1/todos).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Task Properties**:
+   - **id (number)**: The unique identifier for the todo.
+   - **title (string)**: The title of the todo.
+   - **completed (boolean)**: Indicates whether the todo has been completed or not.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Add New Tasks**: Users can add new tasks via an input field. Tasks added will be displayed in the list.
 
-### `npm test`
+   - Validations:
+     - The task name should not be empty.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Mark Tasks as Completed**: Users can mark a task as completed by clicking on it. Completed tasks are visually distinguishable, often with a different color.
 
-### `npm run build`
+5. **Edit Tasks**: Users can edit the task name by clicking on an edit button/icon next to each task. When a task is edited, the task name is updated in the list.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Delete Tasks**: A delete button/icon is provided to allow users to remove a task from the list.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. **Filter Tasks**: The application implements a filter or tab functionality to toggle between displaying all tasks and completed tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Components and Libraries
 
-### `npm run eject`
+The application is built using React.js and may utilize additional libraries or CSS frameworks as needed. The core components and logic include:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **TaskList**: Displays the list of tasks, handles completion status, editing, and deletion.
+- **TaskForm**: Manages the input field for adding new tasks.
+- **FilterTabs**: Implements the filter functionality for displaying all tasks and completed tasks.
+- **API Integration**: Utilizes the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users/1/todos) to fetch and populate tasks.
+- **Validation**: Ensures that task names are not empty before adding them to the list.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the Todo application locally, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository.
 
-## Learn More
+2. Install the required dependencies using npm or yarn:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Start the development server:
 
-### Code Splitting
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Open the application in your web browser (usually at http://localhost:3000).
 
-### Analyzing the Bundle Size
+## Additional Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- This README provides an overview of the Todo application. Detailed code and component implementations can be found in the source code.
 
-### Making a Progressive Web App
+Feel free to customize and extend the application according to your specific requirements or use case.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README file provides a high-level overview of the Todo Application with API Integration. You can expand upon it with installation instructions, usage examples, and additional details as needed.
