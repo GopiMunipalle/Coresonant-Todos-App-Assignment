@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Coresonant-Todos-App-Assignment/static/css/main.5eab9e3e.css",
+    "main.js": "/Coresonant-Todos-App-Assignment/static/js/main.1cab211f.js",
+    "index.html": "/Coresonant-Todos-App-Assignment/index.html",
+    "main.5eab9e3e.css.map": "/Coresonant-Todos-App-Assignment/static/css/main.5eab9e3e.css.map",
+    "main.1cab211f.js.map": "/Coresonant-Todos-App-Assignment/static/js/main.1cab211f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eab9e3e.css",
+    "static/js/main.1cab211f.js"
+  ]
+}
